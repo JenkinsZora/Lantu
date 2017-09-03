@@ -1,0 +1,423 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    text-decoration: none;
+    font-family: inherit;
+    vertical-align: baseline;
+    list-style: none;
+}
+*{
+    box-sizing: border-box;
+}
+a{
+    font-size: 15px;
+    font-family: "微软雅黑";
+    color: #000;
+}
+/*导航部分*/
+nav{
+    width: 100%;
+    height: 65px;
+    background: #E9EBEE;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000000000;
+    box-shadow: 0 1px 2px 1px rgba(200,200,200,0.8);
+}
+.container{
+     /*max-width: 1100px;*/
+    height: 100%;
+    padding: 0;
+    margin: 0 auto;
+}
+.logo{
+    width: 132px;
+    height: 32px;
+    margin: 12px;
+    float: left;
+}
+.navList{
+    width: 710px;
+    float: left;
+    margin-left:112px;
+}
+.navList>ul{
+    display: flex;
+    justify-content:space-between;
+}
+.navList>ul>li>a{
+    line-height: 65px;
+}
+.navList>ul>li>a:hover{
+    text-decoration: none;
+    color: #A7C31E;
+}
+.navList>ul>li:nth-of-type(3)>a{
+    color: #A7C31E;
+}
+.SmallScreenNav{
+    display: none;  
+}
+
+/*content*/
+.content{
+    width: 100%;
+    margin-top: 65px;
+}
+.banner{
+    width: 100%;
+    height: 616px;
+    position: relative;
+    background: url(../img/bg3-2.jpg)no-repeat center top;
+    background-size: cover;
+}
+.bannerTitle{
+    margin: 250px 0 0 100px;
+    position: absolute;
+}
+.bannerTitle>p:nth-of-type(2){
+    margin: 20px 0 10px;
+}
+.case{
+    width: 860px;
+    height: auto;
+    margin: 30px auto;
+}
+.title{
+    width: 50%;
+    height: auto;
+    padding: 30px 0;
+    margin: 0 auto;
+    background: url(../img/line.png) no-repeat center bottom;
+}
+.title>h2{
+    line-height: 40px;
+    text-align: center;
+}
+.title>h2>img{
+    width: 260px;
+    height: auto;
+}
+.title>h1{
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+}
+.example{
+    width: 100%;
+    margin: 10px auto;
+}
+.examples{
+    width: 100%;
+    height: auto;
+}
+.examples>h1{
+    margin-bottom: 50px;
+    color: #646464;
+    padding-top: 100px;
+    font-size: 20px;
+    line-height: 30px;
+}
+.examples>p{
+    color: #969696;
+    line-height: 30px;
+}
+.examples>div{
+    max-width: 507px;
+    margin: 50px auto;
+}
+
+/*footer*/
+footer{
+    clear: both;
+    width: 90%;
+    border-top: #e6e6e6 solid 1px;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    justify-content:center;
+}
+footer>p{
+    color: #c2c2c2;
+    float: left;
+    text-align: center;
+    margin: 20px 50px 50px 0;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 900px){
+    .container{
+        display: flex;
+        justify-content:center;
+    }
+    .navList{
+        width: 570px;
+        margin: 0px 30px;
+    }
+    .SmallScreenNav{
+        display: none;
+    }
+    .banner{
+        height: 516px;
+    }
+    .bannerTitle{
+        width: 40px;
+        margin: 200px 0 0 50px;
+    }
+
+}
+
+@media screen and (max-width: 900px) and (min-width: 600px){
+    nav{
+        width: 100%;
+        height: 100px;
+        background: #fff;
+        position: relative;
+        position: fixed;
+        top: 0;
+        left: 0;
+        box-shadow:0 1px 2px 1px rgba(200,200,200,0.8);
+    }
+    .SmallScreenNav{
+        display: block;
+        position: relative;
+    }
+    .container>.logo{
+        width: 132px;
+        height: 47px;
+        position: absolute;
+        right: 0;
+        left: 0;
+        margin: auto;
+        padding-top: 15px;
+    }
+    .navList{
+        display: none;
+    }
+    .SmallScreenNav{
+        width: 480px;
+        height: 50px;
+        margin: 0 auto;
+        margin-top: 47px;
+        line-height: 50px;
+    }
+    .SmallScreenNav>a{
+        margin: 0 20px;
+        width: 80px;
+        height: auto;
+        text-align: center;
+        /*display: block;*/
+        float: left;
+    }
+    .SmallScreenNav>a:hover{
+        color: #A7C31E;
+        text-decoration: none;  
+    }
+    .SmallScreenNav>a:first-child{
+        color: #A7C31E;
+    }
+    .more{
+        display: block;
+    }
+    .select{
+        width: 102px;
+        height: 142px;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        z-index: 1000;
+        border: 1px solid #555;
+        background: #fff;
+        border-radius: 5px; 
+        display: none;   
+    }
+    .select>li{
+        display: block;
+        width: 100%;
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+    }
+    .select>li>a{
+        display: inline;
+        line-height: 35px;
+        text-align: center;
+    }
+    .more>img{
+        width: 18%;
+        height: auto;
+    }
+    /*content*/
+    .banner{
+        height: 400px;
+        margin-top: 100px;
+    }
+    .bannerTitle{
+        width: 270px;
+        margin: 150px 0 0 35px;
+        padding: 0;
+    }
+    .bannerTitle>p>img{
+        width: 100%;
+    }
+    /*.case{
+        width: 100%;
+    }*/
+    .case{
+        width: 80%;
+    }
+    .examples>div>img{
+        width: 100%
+    }
+
+/*footer*/
+    footer{
+        display: block!important;
+    }
+    footer>p{
+        width: 100%;
+        margin: 20px auto;
+    }
+    footer>p:nth-of-type(2){
+        margin: 0;
+    }
+    
+}
+
+@media screen and (max-width: 600px){
+    nav{
+        width: 100%;
+        height: 100px;
+        background: #fff;
+        position: relative;
+        position: fixed;
+        top: 0;
+        left: 0;
+        box-shadow:0 1px 2px 1px rgba(200,200,200,0.8);
+    }
+    .content{
+        margin-top: 100px;
+    }
+    .SmallScreenNav{
+        display: block;
+        position: relative;
+    }
+    .container>.logo{
+        width: 132px;
+        height: 47px;
+        position: absolute;
+        right: 0;
+        left: 0;
+        margin: auto;
+        padding-top: 15px;
+    }
+    .navList{
+        display: none;
+    }
+    .SmallScreenNav{
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 47px;
+        display: flex;
+        justify-content:center;
+    }
+    .SmallScreenNav>a{
+        margin: 20px 15px 0;
+        width: auto!important;
+        height: auto;
+        text-align: center;
+        display: inline!important;
+        float: left;
+    }
+    .SmallScreenNav>a:hover{
+        color: #A7C31E;
+        text-decoration: none;  
+    }
+    .SmallScreenNav>a:first-child{
+        color: #A7C31E;
+    }
+    .more{
+        display: block;
+        position: relative;
+    }
+
+    .select{
+        width: 102px;
+        height: 142px;
+        position: absolute;
+        top: 50px;
+        right:7%;
+        z-index: 1000;
+        border: 1px solid #555;
+        background: #fff;
+        border-radius: 5px; 
+        display: none;   
+    }
+    .select>li{
+        display: block;
+        width: 100%;
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+    }
+    .select>li>a{
+        display: inline;
+        line-height: 35px;
+        text-align: center;
+    }
+    .more>img{
+        width: 18%;
+        height: auto;
+    }
+    /*content*/
+    .banner{
+        height: 210px;
+    }
+    .bannerTitle{
+        width: 150px;
+        height: auto;
+        margin: 70px 0px 0px 15px;
+    }
+    .bannerTitle>p>img{
+        width: 150px;
+    }
+    .case{
+        width: 100%;
+    }
+    .title{
+        width: 300px;
+    }
+    .title>h2>img{
+        width: 210px;
+    }
+    .case{
+        width: 80%!important;
+    }
+    .examples>h1{
+        font-size: 16px;
+        text-align: center;
+    }
+    .examples>p{
+        font-size: 13px;
+    }
+    .examples>div>img{
+        width: 100%
+    }
+/*footer*/
+    footer{
+        display: block!important;
+    }
+    footer>p{
+        width: 100%;
+        margin: 20px auto;
+        font-size: 12px;
+    }
+    footer>p:nth-of-type(2){
+        margin: 0;
+    }
+}

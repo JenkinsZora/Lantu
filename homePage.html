@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>兰途科技 - 移动校园专业服务商</title>
+	<link rel="shortcut icon" href="img/fav.ico">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/homePage.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/index.js"></script>
+</head>
+<script type="text/javascript">
+
+</script>
+<body>
+<!-- 导航部分 -->
+	<nav>
+		<div class="container">
+			<div class="logo">
+				<img src="img/logo.png" alt="">
+			</div>
+			<div class="navList">
+				<ul>
+					<li><a href="homePage.html">首页</a></li>
+					<li><a href="school.html">移动校园</a></li>
+					<li><a href="ClassicCase.html">经典案例</a></li>
+					<li><a href="dynamic.html">公司动态</a></li>
+					<li><a href="valor.html">招贤纳士</a></li>
+					<li><a href="contactUs.html">联系我们</a></li>
+				</ul>
+			</div>
+			<div class="SmallScreenNav">
+				<a href="homePage.html">首页</a>
+				<a href="school.html">移动校园</a>
+				<a href="ClassicCase.html">经典案例</a>
+				<a href="void:0" class="more">更多 
+					<img src="img/nav_icon.png" alt="">
+				</a>
+			</div>
+		</div>
+	</nav>
+<!-- content -->
+	<div class="content">
+		<div class="contentOne">
+			<!-- banner -->
+			<div class="banner bannerOne">
+				<div class="title">
+					<img src="img/b3_d3.png" alt="">
+				</div>
+				<div class="bannerPhoto">
+					<img src="img/ih3.png" alt="">
+				</div>
+			</div>
+			<div class="banner bannerTwo">
+				<div class="title">
+					<img src="img/b1_d1.png" alt="">
+					<img src="img/b1_d2.png" alt="" class="littleTitle">
+					<img src="img/b1_d3.png" alt="" class="littleTitle2">
+				</div>
+				<div class="bannerPhoto bannerPhotoTwo">
+					<img src="img/ih1.png" alt="">
+				</div>	
+			</div>
+			<div class="banner bannerThree">
+				<div class="bannerPhoto bannerPhotoThree">
+					<img src="img/ih2.png" alt="">
+				</div>
+				<div class="title titleThree">
+					<img src="img/b2_d1.png" alt="">
+					<img src="img/b2_d2.png" alt="" class="littleTitle">
+					<img src="img/b2_d3.png" alt="" class="littleTitle2">
+				</div>
+			</div>
+			<ul class="btnBox">
+				<li class="btn"></li>
+				<li class="btn"></li>
+				<li class="btn"></li>
+			</ul>
+		</div>
+		<!-- 经典案例 -->
+		<div class="case">
+			<div class="bigTitle">
+				<h2>
+					<img src="img/t_c.png" alt="">
+				</h2>
+				<h1>经典案例</h1>
+			</div>
+			<div class="casePhoto">
+				<div class="casePhotoMain" id="yixing">
+					<ul>
+
+						<li class="denghou"><img src="img/i1.png"/></li>
+
+						<li class="denghou"><img src="img/i2.png"/></li>
+
+						<li class="no0"><img src="img/i3.png"/></li>
+
+						<li class="no1"><img src="img/i4.png"/></li>
+
+						<li class="no2"><img src="img/i5.png"/></li>
+
+						<li class="no3"><img src="img/i6.png"/></li>
+
+						<li class="no4"><img src="img/i7.png"/></li>
+
+						<li class="denghou"><img src="img/i8.png"/></li>
+
+						<li class="denghou"><img src="img/i9.png"/></li>
+
+					</ul>
+					<div class="leftBtn zuoanniu">
+						<!-- <img src="img/t_l.png" alt=""> -->
+					</div>
+					<div class="rightBtn youanniu">
+						<!-- <img src="img/t_r.png" alt=""> -->
+					</div>
+					<!-- <ul class="btn3D">
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul> -->
+				</div>
+			</div>
+		</div>
+
+		<!-- 研发伙伴 -->
+		<div class="friend">
+			<div class="friendMain">
+				<h2>
+					<img src="img/rd.png" alt="">
+				</h2>
+				<h1>研发伙伴</h1>
+			</div>
+			<div class="imgs">
+				<ul>
+					<li><img src="img/rd1.jpg" alt=""></li>
+					<li><img src="img/rd2.jpg" alt=""></li>
+					<li><img src="img/rd3.jpg" alt=""></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<footer>
+		<p>备案号：蜀ICP备13025447号-1</p>
+		<p>©2013-2017 版权所有</p>
+		<p>成都兰途网络科技有限公司</p>
+	</footer>
+</body>
+<script type="text/javascript">
+
+		$(document).ready(
+
+			function(){
+
+				var json0 = { "width":192, "height":"auto", "top":100, "left":0};
+
+            	var json1 = { "width":240, "height":"auto", "top":71, "left":210}
+
+            	var json2 = { "width":288, "height":"auto", "top":47, "left":460}
+
+            	var json3 = { "width":240, "height":"auto", "top":16, "right":210 }
+
+            	var json4 = { "width":192, "height":"auto", "top":100, "right":0 }
+
+				$(".youanniu").click(
+
+					function(){
+
+						if(!$("#yixing li").is(":animated")){
+
+							//先交换位置
+
+							$(".no1").animate(json0,400);
+
+							$(".no2").animate(json1,400);
+
+							$(".no3").animate(json2,400);
+
+							$(".no4").animate(json3,400);
+
+							$(".no0").css(json4);
+
+							//再交换身份
+
+							$(".no0").attr("class","denghou");
+
+							$(".no1").attr("class","no0");
+
+							$(".no2").attr("class","no1");
+
+							$(".no3").attr("class","no2");
+
+							$(".no4").attr("class","no3");
+
+							//上面的交换身份，把no0搞没了！所以，我们让no1前面那个人改名为no0
+
+							if($(".no3").next().length != 0){
+
+								//如果no5后面有人，那么改变这个人的姓名为no6
+
+								$(".no3").next().attr("class","no4");
+
+							}else{
+
+								//no5前面没人，那么改变此时队列最开头的那个人的名字为no0
+
+								$("#yixing li:first").attr("class","no4");
+
+							}
+
+							
+
+							//发现写完上面的程序之后，no6的行内样式还是json0的位置，所以强制：
+
+							$(".no4").css(json4);
+
+						}
+
+					}
+
+				);
+
+
+
+				$(".zuoanniu").click(
+					function(){
+
+						if(!$("#yixing li").is(":animated")){
+
+
+							$(".no0").animate(json1,400);
+
+							$(".no1").animate(json2,400);
+
+							$(".no2").animate(json3,400);
+
+							$(".no3").animate(json4,400);
+
+							$(".no4").css(json0);
+
+
+
+							$(".no4").attr("class","denghou");
+
+							$(".no3").attr("class","no4");
+
+							$(".no2").attr("class","no3");
+
+							$(".no1").attr("class","no2");
+
+							$(".no0").attr("class","no1");
+
+
+
+							//上面的交换身份，把no0搞没了！所以，我们让no1前面那个人改名为no0
+
+							if($(".no1").prev().length != 0){
+
+								//如果no1前面有人，那么改变这个人的姓名为no0
+
+								$(".no1").prev().attr("class","no0");
+
+							}else{
+
+								//no1前面没人，那么改变此时队列最后的那个人的名字为no0
+
+								$("#yixing li:last").attr("class","no0");
+
+							}
+
+
+
+							$(".no0").css(json0);
+
+						}
+
+					}
+
+				);
+
+			}
+
+		);
+
+	</script>
+</html>

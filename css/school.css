@@ -1,0 +1,1027 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    text-decoration: none;
+    font-family: inherit;
+    vertical-align: baseline;
+    list-style: none;
+}
+*{
+    box-sizing: border-box;
+}
+a{
+    font-size: 15px;
+    font-family: "微软雅黑";
+    color: #000;
+}
+/*导航部分*/
+nav{
+    width: 100%;
+    height: 65px;
+    background: #E9EBEE;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000000000;
+    box-shadow: 0 1px 2px 1px rgba(200,200,200,0.8);
+}
+.container{
+     /*max-width: 1100px;*/
+    height: 100%;
+    padding: 0;
+    margin: 0 auto;
+}
+.logo{
+    width: 132px;
+    height: 32px;
+    margin: 12px;
+    float: left;
+}
+.navList{
+    width: 710px;
+    float: left;
+    margin-left:112px;
+}
+.navList>ul{
+    display: flex;
+    justify-content:space-between;
+}
+.navList>ul>li>a{
+    line-height: 65px;
+}
+.navList>ul>li>a:hover{
+    text-decoration: none;
+    color: #A7C31E;
+}
+.navList>ul>li:nth-of-type(2)>a{
+    color: #A7C31E;
+}
+.SmallScreenNav{
+    display: none;  
+}
+.content{
+    width: 100%;
+    height: auto;
+    margin-top: 65px;
+}
+/*content*/
+/*modelOne*/
+.photo{
+    width: 100%;
+    height: auto;
+    background-size:cover;
+    background-position:center!important;
+    position: relative;
+}
+.bottonTitle{
+    width: 100%;
+    height: 106px;
+    text-align: center;
+    font-size: 17px;
+    line-height: 106px;
+    color: #eee;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba(255,255,255,.3);
+}
+.bottonTitle>img{
+    position: absolute;
+    top: -23px;
+    left: 50%;
+    margin-left: -23px;
+    width: 46px;
+    height: 46px;
+    cursor: pointer;
+    border-radius: 50%;
+    animation: a_d 2s infinite;
+}
+.photoOne{
+    background: url(../img/bg2-1.jpg);
+}
+.modelOneTitle{
+    width: auto;
+    height: auto;
+    float: left;
+    margin: 15% 0 0 30%;
+}
+.modelOneTitle>h2{
+    color: #fff;
+    font-size: 46px;
+}
+.modelOneTitle>p{
+    color: #fff;
+    font-size: 18px;
+    line-height: 35px;
+    text-align:right;
+}
+
+/*modelTwo*/
+.photoTwo{
+    width: 100%;
+    height: 430px;
+    z-index: -1;
+    background: url(../img/bg2-2.jpg);
+    background-attachment: fixed;
+    background-size: 100% 100%; 
+}
+/*modelThree*/
+.photoThree{
+    width: 100%;
+    height: auto; 
+    background: #F0F2F5;
+}
+.photoThreeMain{
+    width: 1000px;
+    height: 530px;
+    margin: 0 auto;
+}
+.photoThreeTitle{
+    padding-right:182px;
+    padding-top: 195px;
+    float: left;
+}
+.photoThreeTitle>h2{
+    color: #0080BA;
+    font-size: 40px;
+    line-height: 70px;
+}
+.photoThreeTitle>p{
+    color: #0080BA;
+    font-size: 18px;
+    line-height: 35px;
+}
+.photoThreeImg{
+    width: 530px;
+    height: auto;
+    float: left;
+    padding-top: 90px;
+    position: relative;
+}
+.photoThreeAnimate{
+    position: absolute;
+    top: 50px;
+    left: 35px;
+}
+.photoThreeAnimate>img{
+    animation:outer 10s infinite linear;
+}
+@keyframes outer{
+    from{
+        transform:rotate(0deg);
+    }to{
+        transform:rotate(360deg);
+    }
+}
+/*model3*/
+.photo>img{
+    position: absolute;
+    bottom: -23px;
+    left: 50%;
+    margin-left: -23px;
+    width: 46px;
+    height: 46px;
+    cursor: pointer;
+    border-radius: 50%;
+    animation: a_d 2s infinite;
+}
+/*model4*/
+.photoFour{
+    width: 100%;
+    height: 430px;
+    z-index: -1;
+    background: url(../img/bg3.jpg);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-position: center;
+}
+/*model5*/
+.photoFive{
+    width: 100%;
+    height: 530px;
+    background: #F0F2F5;
+}
+
+.photoFiveModel{
+    width: auto;
+    height: auto;
+}
+.photoFiveImg{
+    width: 424px;
+    height: 427px;
+    padding-top: 103px;
+    float: left;
+    padding-right:100px;
+    float: left;
+}
+.photoFiveImg>ul{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.photoFiveImg li{
+    width: 100%;
+    height: 100%;
+    background: url(../img/m5.png)no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+.photoFiveImgList{
+    width: 150px;
+    height: auto;
+    float: left;
+    padding-top: 64px;
+
+}
+
+.photoFiveImgList>ul>li{
+    width: 100%;
+    height: auto;
+    font-size: 20px;
+    color: #0080BA;
+    margin: 15px 0;
+}
+.photoFiveImgList>ul>li>span{
+    width: 10px;
+    height: 10px;
+    background: #B6D230;
+    border-radius: 50%;
+    display: inline-block;
+    float: left;
+    margin: 5px 25px 5px 0px;
+}
+.imgFiveOne{
+    background-position: 0 0!important;
+    /*opacity: 1!important;*/
+    /*z-index: 1!important;*/
+}
+.imgFiveTwo{
+    background-position: 0 -324px!important;
+}
+.imgFiveThree{
+    background-position: 0 -648px!important;
+}
+.imgFiveFour{
+    background-position: 0 -972px!important;
+}
+.imgFiveFive{
+    background-position: 0 -1296px!important;
+}
+.imgFiveSix{
+    background-position: 0 -1620px!important;
+}
+.imgFiveSeven{
+    background-position: 0 -1944px!important;
+}
+.imgFiveEight{
+    background-position: 0 -2268px!important;
+}
+.imgFiveNine{
+    background-position: 0 -2592px!important;
+}
+.photoFiveTitle{
+    padding-left: 170px;
+    padding-right: 0;
+}
+/*model6*/
+.photoSix{
+    width: 100%;
+    height: 430px;
+    z-index: -1;
+    background:url(../img/bg4.jpg) no-repeat center;
+    background-attachment: fixed;
+}
+/*model7*/
+.photoSeven{
+    width: 100%;
+    height: auto;
+    background: #E9EBEE
+}
+
+.photoSevenImg{
+    width: 530px;
+    padding: 50px 0;
+    position: relative;
+    float: left;
+}
+.pointer{
+    /*width: 160px;
+    height: 214px;*/
+    position: absolute;
+    margin: 0;
+    top: 160px;
+    left: 214px;
+    animation:pointers 60s infinite linear;
+}
+@keyframes pointers{
+    /*form{
+        transform:rotate3d(0,0,0,0);
+    }to{
+        transform:rotate3d(0,0,0,360);
+    }*/
+}
+/*model8*/
+.photoEight{
+    width: 100%;
+    height: 430px;
+    background: url(../img/bg5.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -1;
+}
+/*model9*/
+.photoNineModel{
+    width: 400px;float: left;
+    padding-top: 65px;
+    position: relative;
+}
+.imgNine{
+    position: absolute;
+    top: 60px;
+    left: 175px;
+    animation:outer 20s infinite linear;
+}
+@keyframes outer{
+    from{
+        transform:rotate(0deg);
+    }to{
+        transform:rotate(360deg);
+    }
+}
+.photoNineTitle{
+    padding-left: 333px;
+}
+/*modelTen*/
+.photoTen{
+    width: 100%;
+    height: 430px;
+    background: url(../img/bg6.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -1;
+}
+.photoThreeTitle>.icon{
+    width: auto;
+    height: auto;
+}
+.photoThreeTitle>.icon>ul>li{
+    float: left;
+    margin: 10px;
+    color: #0080BA;
+    width: 37px;
+}
+.photoThreeTitle>.icon>ul>li>span{
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.select>li>a:hover{
+    text-decoration: none;
+    color: #A7C31E;
+}
+@media screen and (max-width: 1200px) and (min-width: 900px){
+    .container{
+        display: flex;
+        justify-content:center;
+    }
+    .navList{
+        width: 570px;
+        margin: 0px 30px;
+    }
+    .SmallScreenNav{
+        display: none;
+    }
+    .photoThreeMain{
+        width: auto;
+        padding: 90px 17px;
+        display: flex;
+        justify-content:space-between;
+    }
+    .photoThreeTitle{
+        padding:105px 55px 105px 0;
+    }
+    .photoThreeImg{
+        padding-top: 0;
+    }
+    .photoThreeAnimate{
+        top: -40px;
+    }
+   .photoThreeImg>img{
+        width: 100%;
+        height: auto;
+   }
+   .photoFiveTitle{
+    padding-left: 50px!important;
+   }
+   .photoFiveImg{
+        height: 324px;
+        padding-top: 0;
+   }
+   .photoFiveImgList{
+        padding-top: 0;
+   }
+   .photoFiveImgList>ul>li{
+        line-height: 20px;
+   }
+   .photoFiveTitle{
+        padding-right: 0;
+        padding-left: 55px;
+   }
+   .photoSevenImg{
+        padding:0; 
+   }
+   .pointer{
+        top: 110px;
+   }
+   .photoNineModel{
+        padding: 0;
+        margin-top: -30px;
+   }
+   .imgNine{
+        left: 15px!important;
+   }
+   .photoNineTitle{
+        padding-left: 180px!important;
+   }
+
+}
+
+/*footer*/
+footer{
+    clear: both;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    justify-content:center;
+    background: url(../img/bg1.jpg) no-repeat center;
+}
+footer>p{
+    color: #eee;
+    float: left;
+    text-align: center;
+    margin: 25px 50px 25px 0;
+}
+
+/*小屏*/
+@media screen and (max-width: 900px) and (min-width: 600px){
+    nav{
+        width: 100%;
+        height: 100px;
+        background: #fff;
+        position: relative;
+        position: fixed;
+        top: 0;
+        left: 0;
+        box-shadow:0 1px 2px 1px rgba(200,200,200,0.8);
+    }
+    .SmallScreenNav{
+        display: block;
+        position: relative;
+    }
+    .container>.logo{
+        width: 132px;
+        height: 47px;
+        position: absolute;
+        right: 0;
+        left: 0;
+        margin: auto;
+        padding-top: 15px;
+    }
+    .navList{
+        display: none;
+    }
+    .SmallScreenNav{
+        width: 480px;
+        height: 50px;
+        margin: 0 auto;
+        margin-top: 47px;
+        line-height: 50px;
+    }
+    .SmallScreenNav>a{
+        margin: 0 20px;
+        width: 80px;
+        height: auto;
+        text-align: center;
+        /*display: block;*/
+        float: left;
+    }
+    .SmallScreenNav>a:hover{
+        color: #A7C31E;
+        text-decoration: none;  
+    }
+    .SmallScreenNav>a:first-child{
+        color: #A7C31E;
+    }
+    .more{
+        display: block;
+    }
+    .select{
+        width: 102px;
+        height: 142px;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        z-index: 1000;
+        border: 1px solid #555;
+        background: #fff;
+        border-radius: 5px; 
+        display: none;   
+    }
+    .select>li{
+        display: block;
+        width: 100%;
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+    }
+    .select>li>a{
+        display: inline;
+        line-height: 35px;
+        text-align: center;
+    }
+    .more>img{
+        width: 18%;
+        height: auto;
+    }
+    /*content*/
+    .content{
+        margin-top: 100px;
+    }
+    .photoThreeMain{
+        width: 100%;
+    }
+    .modelOneTitle>h2{
+        font-size: 34px;
+        line-height: 70px;
+    }
+    .modelOneTitle{
+        margin: 10% 0 0 20%;
+    }
+    .photo>img{
+        display: none;
+    }
+    .bottonTitle>img{
+        display: none;
+    }
+    .bottonTitle{
+        height: 60px;
+        line-height: 60px;
+        font-size: 14px;
+    }
+    .photoTwo{
+        width: 100%;
+        height: 430px;
+        z-index: -1;
+        background: url(../img/bg2-2.jpg);
+        /*background-attachment: fixed;*/
+        background-size: 100% 100%; 
+    }
+    .photoFour{
+        width: 100%;
+        height: 430px;
+        z-index: -1;
+        background: url(../img/bg3.jpg);
+        /*background-attachment: fixed;*/
+        background-size: 100% 100%;
+        background-position: center;
+    }
+    .photoSix{
+        width: 100%;
+        height: 430px;
+        z-index: -1;
+        background:url(../img/bg4.jpg) no-repeat center;
+        /*background-attachment: fixed;*/
+    }
+    .photoEight{
+        width: 100%;
+        height: 430px;
+        background: url(../img/bg5.jpg) no-repeat center;
+        background-size: cover;
+        /*background-attachment: fixed;*/
+        z-index: -1;
+    }
+    .photoTen{
+        width: 100%;
+        height: 430px;
+        background: url(../img/bg6.jpg) no-repeat center;
+        background-size: cover;
+        /*background-attachment: fixed;*/
+        z-index: -1;
+    }
+    .photo{
+        width: 100%;
+        position: relative;
+    }
+    .photoThreeTitle>h2{
+        font-size: 34px;
+    }
+    .photoThreeTitle{
+        width: 400px;
+        position: absolute;
+        padding: 30px 0;
+        left: 50%;
+        text-align: center;
+        margin-left: -200px;
+    }
+    .photoThreeMain>.photoThreeImg{
+        width: 400px;
+        height: auto;
+        position: absolute;
+        top: 200px;
+        left: 50%;
+        padding: 0;
+        margin-left: -200px;
+    }
+    .photoThreeImg>img{
+        width: 100%;
+    }
+    .photoThreeAnimate{
+        width: 350px;
+        top: -30px;
+        left: 25px;
+    }
+    .photoThreeAnimate>img{
+        width: 100%;
+    }
+    .photoThreeTitle>.icon{
+        display: table;
+        margin: 0 auto;
+    }
+    .photoFiveMain>.photoFiveModel{
+        display: table;
+        position: absolute;
+        width: 600px;
+        top: 200px;
+        left: 50%;
+        margin-left: -300px;
+
+    }
+    .photoFiveImg{
+        padding: 0;
+        width: 324px;
+        height: 324px;
+    }
+    .photoFiveImgList{
+        padding: 0;
+        margin-left: 100px;
+    }
+    .photoFiveImgList>ul>li{
+        line-height: 20px;
+    }
+    .photoSevenImg{
+        padding: 0;
+        position: absolute;
+        width: 400px;
+        height: auto;
+        top: 200px;
+        left: 50%;
+        margin-left: -200px;
+    }
+    .photoSevenImg>img{
+        width: 100%;
+    }
+    .pointer{
+        width: 118px;
+        height: auto;
+        top: 80px;
+        left: 165px; 
+    }
+    .pointer>img{
+        width: 100%;
+    }
+    .photoNineModel{
+        position: absolute;
+        width: 400px!important;
+        height: auto;
+        top: 200px;
+        left: 50%;
+        margin-left: -150px!important;
+        padding: 0;
+    }
+    .photoNineModel>img{
+        width: 100%;
+    }
+    .imgNine{
+        width: 300px;
+        top: 190px;
+        left: 240px;
+    }
+    .photoTenMain>.photoThreeImg{
+        padding: 50px 0;
+    }
+ /*   .photoThreeAnimate {
+        top: -30px;
+        
+    }*/
+/*footer*/
+    footer{
+        display: block!important;
+    }
+    footer>p{
+        width: 100%;
+        margin: 20px auto;
+    }
+    footer>p:nth-of-type(2){
+        margin: 0;
+    }
+    
+}
+/*移动端*/
+@media screen and (max-width: 600px){
+    nav{
+        width: 100%;
+        height: 100px;
+        background: #fff;
+        position: relative;
+        position: fixed;
+        top: 0;
+        left: 0;
+        box-shadow:0 1px 2px 1px rgba(200,200,200,0.8);
+    }
+    .content{
+        margin-top: 100px;
+    }
+    .SmallScreenNav{
+        display: block;
+        position: relative;
+    }
+    .container>.logo{
+        width: 132px;
+        height: 47px;
+        position: absolute;
+        right: 0;
+        left: 0;
+        margin: auto;
+        padding-top: 15px;
+    }
+    .navList{
+        display: none;
+    }
+    .SmallScreenNav{
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 47px;
+        display: flex;
+        justify-content:center;
+    }
+    .SmallScreenNav>a{
+        margin: 20px 15px 0;
+        width: auto!important;
+        height: auto;
+        text-align: center;
+        display: inline!important;
+        float: left;
+    }
+    .SmallScreenNav>a:hover{
+        color: #A7C31E;
+        text-decoration: none;  
+    }
+    .SmallScreenNav>a:first-child{
+        color: #A7C31E;
+    }
+    .more{
+        display: block;
+        position: relative;
+    }
+
+    .select{
+        width: 102px;
+        height: 142px;
+        position: absolute;
+        top: 50px;
+        right:7%;
+        z-index: 1000;
+        border: 1px solid #555;
+        background: #fff;
+        border-radius: 5px; 
+        display: none;   
+    }
+    .select>li{
+        display: block;
+        width: 100%;
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+    }
+    .select>li>a{
+        display: inline;
+        line-height: 35px;
+        text-align: center;
+    }
+    .more>img{
+        width: 18%;
+        height: auto;
+    }
+    /*content*/
+    .content{
+        margin-top: 100px;
+    }
+    .photoOne{
+        width: 100%!important;
+        height: 300px!important;
+        background-size: cover;
+    }
+    .photoThreeMain{
+        width: 100%;
+    }
+    .modelOneTitle>h2{
+        font-size: 24px;
+        line-height: 44px;
+    }
+    .modelOneTitle{
+        margin: 10% 0 0 20%;
+    }
+    .modelOneTitle>p{
+        font-size: 14px;
+        line-height: 27px;
+    }
+    .photo>img{
+        display: none;
+    }
+    .bottonTitle>img{
+        display: none;
+    }
+    .bottonTitle{
+        height: 60px;
+        line-height: 60px;
+        font-size: 14px;
+    }
+    .photoTwo{
+        width: 100%;
+        height: 300px;
+        z-index: -1;
+        background: url(../img/bg2-2.jpg);
+        background-size: cover;
+
+    }
+    .photoFour{
+        width: 100%;
+        height: 300px;
+        z-index: -1;
+        background: url(../img/bg3.jpg);
+        /*background-attachment: fixed;*/
+        background-size: cover;
+        background-position: center;
+    }
+    .photoSix{
+        width: 100%;
+        height: 300px;
+        z-index: -1;
+        background:url(../img/bg4.jpg) no-repeat center;
+        background-size: cover;
+        /*background-attachment: fixed;*/
+    }
+    .photoEight{
+        width: 100%;
+        height: 300px;
+        background: url(../img/bg5.jpg) no-repeat center;
+        background-size: cover;
+        /*background-attachment: fixed;*/
+        z-index: -1;
+    }
+    .photoTen{
+        width: 100%;
+        height: 300px;
+        background: url(../img/bg6.jpg) no-repeat center;
+        background-size: cover;
+        /*background-attachment: fixed;*/
+        z-index: -1;
+    }
+    .photo{
+        width: 100%;
+        position: relative;
+    }
+    .photoThreeTitle>h2{
+        font-size: 24px;'
+        line-height: 44px!important;
+    }
+    .photoThreeTitle>p{
+        font-size: 14px;
+        line-height: 27px;
+    }
+    .photoThreeTitle{
+        width: 400px;
+        position: absolute;
+        padding: 30px 0;
+        left: 50%;
+        text-align: center;
+        margin-left: -200px;
+    }
+    .photoThreeMain>.photoThreeImg{
+        width: 300px;
+        height: auto;
+        position: absolute;
+        top: 200px;
+        left: 50%;
+        padding: 0;
+        margin-left: -150px;
+    }
+    .photoThreeImg>img{
+        width: 100%;
+    }
+    .photoThreeAnimate{
+        width: 250px;
+        top: -15px;
+        left: 25px
+    }
+    .photoThreeAnimate>img{
+        width: 100%;
+    }
+    .photoThreeTitle>.icon{
+        display: table;
+        margin: 0 auto;
+    }
+    .photoFive{
+        height: 650px;
+    }
+    .photoFiveImg{
+        padding: 0;
+    }
+    .photoFiveImg>ul{
+        width: 280px;
+        height: 280px;
+        top: 200px;
+        left: 50%;
+        margin-left: -130px;
+    }
+    .photoFiveImg>ul>li{
+        background-size: 100%;
+    }
+    .photoFiveImgList{
+        width: 300px;
+        height: auto;
+        top: 430px;
+        left: 50%;
+        position: absolute;
+        margin-left: -150px;
+    }
+    .photoFiveImgList>ul>li{
+        width: auto;
+        margin: 12px 8px;
+        font-size: 16px;
+        float: left;
+    }
+    .photoFiveImgList>ul>li>span{
+        margin: 5px 5px 5px 0;
+    }
+    .photoSevenImg{
+        padding: 0;
+        position: absolute;
+        width: 300px;
+        height: auto;
+        top: 200px;
+        left: 50%;
+        margin-left: -150px;
+    }
+    .photoSevenImg>img{
+        width: 100%;
+    }
+    .pointer{
+        width: 95px;
+        height: auto;
+        top: 55px;
+        left: 120px; 
+    }
+    .pointer>img{
+        width: 100%;
+    }
+    .photoNineModel{
+        position: absolute;
+        width: 300px;
+        height: auto;
+        top: 200px;
+        left: 50%;
+        margin-left: -95px!important;
+        padding: 0;
+    }
+    .photoNineModel>img{
+        width: 100%;
+    }
+    .imgNine{
+        width: 230px;
+        top: 180px;
+        left: 120px;
+    }
+    .photoTenMain>.photoThreeImg{
+        padding: 50px 0;
+    }
+
+/*footer*/
+    footer{
+        display: block!important;
+    }
+    footer>p{
+        width: 100%;
+        margin: 20px auto;
+    }
+    footer>p:nth-of-type(2){
+        margin: 0;
+    }
+}
